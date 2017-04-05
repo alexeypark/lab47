@@ -1,4 +1,4 @@
-<h1><%= @product.title %></h1>
+<h1><%= @product.send("title_" + "#{I18n.locale}") %></h1>
 <%= image_tag @product.image_url(:thumb)%>
 <p><%= @product.description %></p>
 <p>
