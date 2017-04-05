@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h1><%= t 'index.greeting' %></h1>
   <p><%= t 'index.description' %></p>
-  <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+  <p><a href="#" class="btn btn-primary btn-lg"><%= t 'index.learn_more' %></a></p>
 </div>
 
 <div class="row">
@@ -37,8 +37,8 @@
               <div class="img" style="background-image: url('<%= product.image_url(:thumb)%>');"></div>
               <h4>$<%= product.price %></h4>
               <p>
-                <%= link_to 'View', product,  class:"btn btn-default" %>
-                <button class="btn btn-primary">Add to cart</button>
+                <%= link_to (t 'index.view'), product,  class:"btn btn-default" %>
+                <button class="btn btn-primary"><%= t 'index.add' %></button>
               </p>
             </div>
           </div>

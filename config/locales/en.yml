@@ -24,10 +24,17 @@ en:
     title: 'Shop'
     sign_up: 'Sign up'
     log_in: 'Log in'
+    admin_title: 'Shop Admin'
   index:
     greeting: 'Welcome to shop'
     description: 'Here you can purchase all kinds of computer hardware for lowest prices. We sell from only trusted and large distributors, to fulfill all your DIY computer needs!'
     cart: 'Cart'
     cart_info: 'Your cart is empty'
+    view: 'View'
+    add: 'Add to cart'
+    learn_more: 'Learn more'
   categories:
     categories: 'Categories'
+  prices:
+    price: 'Price'
+  products: 'Products'
