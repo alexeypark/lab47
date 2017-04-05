@@ -20,6 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  navbar:
+    title: 'Shop'
+    sign_up: 'Sign up'
+    log_in: 'Log in'
   index:
     greeting: 'Welcome to shop'
     description: 'Here you can purchase all kinds of computer hardware for lowest prices. We sell from only trusted and large distributors, to fulfill all your DIY computer needs!'
+    cart: 'Cart'
+    cart_info: 'Your cart is empty'
+  categories:
+    categories: 'Categories'
