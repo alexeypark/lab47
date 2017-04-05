@@ -19,7 +19,7 @@
   <% @products.each do |product| %>
       <tr>
         <td><%= image_tag product.image_url(:thumb)%></td>
-        <td><%= @product.send("title_" + "#{I18n.locale}") %></td>
+        <td><%= product.send("title_" + "#{I18n.locale}") %></td>
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= product.category.name %></td>
