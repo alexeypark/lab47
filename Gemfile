@@ -56,3 +56,5 @@ gem 'bootstrap-will_paginate'
 gem 'devise-i18n'
 
 gem 'carrierwave', '~> 1.0'
+
+gem 'rmagick', '~> 2.13.1'

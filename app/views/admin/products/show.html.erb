@@ -1,4 +1,5 @@
 <h1><%= @product.title %></h1>
+<%= image_tag @product.image_url(:thumb)%>
 <p><%= @product.description %></p>
 <p>
     Price: <b><%= @product.price %></b>
