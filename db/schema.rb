@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151021143359) do
+ActiveRecord::Schema.define(version: 20170405203436) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20151021143359) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
+    t.string   "image"
   end
 
   add_index "products", ["category_id"], name: "index_products_on_category_id"
@@ -43,6 +44,7 @@ ActiveRecord::Schema.define(version: 20151021143359) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.boolean  "admin",               default: false
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
