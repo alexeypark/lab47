@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', platforms: :ruby
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -54,3 +54,5 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'bootstrap-will_paginate'
 
 gem 'devise-i18n'
+
+gem 'carrierwave', '~> 1.0'
