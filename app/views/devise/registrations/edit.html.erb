@@ -1,10 +1,10 @@
-<h2 class="text-center">Edit <%= resource_name.to_s.humanize %></h2>
+<h2 class="text-center"><%= t 'users.edit_user' %> <%= resource_name.to_s.humanize %></h2>
 <hr/>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-horizontal' }) do |f| %>
 
   <div class="form-group <%= 'has-error' if resource.errors[:name].any? %>">
-    <%= f.label :name, class: 'col-sm-2 control-label' %>
+    <%= f.label (t 'users.name'), class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
       <%= f.text_field :name, class: 'form-control' %>
       <%= render 'shared/field_errors', object: resource, field_name: :name %>
@@ -50,18 +50,18 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <%= f.submit 'Update', class: 'btn btn-primary' %>
+      <%= f.submit (t 'users.edit_user'), class: 'btn btn-primary' %>
     </div>
   </div>
 <% end %>
 
-<h3 class="text-center">Cancel my account</h3>
+<h3 class="text-center"><%= t '.cancel_my_account' %></h3>
 <hr/>
 
 <div class="row">
   <div class="col-sm-offset-2 col-sm-10">
-    Unhappy?
-    <%= button_to 'Cancel my account',
+    <%= t '.unhappy' %>?
+    <%= button_to (t '.cancel_my_account'),
                   registration_path(resource_name),
                   data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %>
   </div>

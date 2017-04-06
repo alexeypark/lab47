@@ -61,6 +61,13 @@ en:
     view: 'View'
     edit: 'Edit'
     delete: 'Delete'
+  users:
+    name: 'Name'
+    new_user: 'New User'
+    edit_user: 'Edit User'
+    sign_up: 'Sign Up'
+
+
   will_paginate:
       previous_label: "&#8592; Previous"
       next_label: "Next &#8594;"

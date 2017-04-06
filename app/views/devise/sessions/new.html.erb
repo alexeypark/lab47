@@ -1,4 +1,4 @@
-<h2 class="text-center">Log in</h2>
+<h2 class="text-center"><%= t 'navbar.log_in' %> </h2>
 <hr />
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
@@ -20,8 +20,8 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <div class="checkbox">
-          <%= f.label :remember_me do %>
-            <%= f.check_box :remember_me %> Remember me
+          <%= f.label (t 'activerecord.attributes.user.remember_me') do %>
+            <%= f.check_box :remember_me %> <%= t 'activerecord.attributes.user.remember_me' %>
           <% end %>
         </div>
       </div>
@@ -30,7 +30,7 @@
 
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <%= f.submit 'Log in', class: 'btn btn-primary' %>
+      <%= f.submit (t 'navbar.log_in'), class: 'btn btn-primary' %>
     </div>
   </div>
 <% end %>

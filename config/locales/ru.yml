@@ -61,22 +61,16 @@ ru:
       view: 'Просмотреть'
       edit: 'Редактировать'
       delete: 'Удалить'
+  users:
+      name: 'Имя'
+      new_user: 'Регистрация пользователя'
+      edit_user: 'Редактировать пользователя'
+      sign_up: 'Зарегистрироваться'
+
   will_paginate:
       previous_label: "&#8592; Назад"
       next_label: "Вперед &#8594;"
       page_gap: "&hellip;"
-
-  activemodel:
-      models:
-        product: "Продукт"
-      attributes:
-        pledge:
-          image: 'Изображение'
-          title_en: 'Наименование на английском'
-          title_ru: 'Наименование на русском'
-          description: 'Описание'
-          price: 'Цена'
-
   activerecord:
     errors:
       messages:
@@ -84,6 +78,7 @@ ru:
         restrict_dependent_destroy:
           has_one: 'Невозможно удалить запись, так как существует зависимость: %{record}'
           has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
+
     errors:
       format: "%{attribute} %{message}"
       messages:
