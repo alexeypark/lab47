@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <h1>Categories <%= link_to 'Add category', new_admin_category_path, class: 'btn btn-success' %></h1>
+    <h1><%= t 'categories.categories' %> <%= link_to (t 'categories.new_category'), new_admin_category_path, class: 'btn btn-success' %></h1>
   </div>
 </div>
 
@@ -8,15 +8,15 @@
 
 <table class="table table-striped">
   <tr>
-    <th>Name</th>
-    <th style="width: 100px;">Actions</th>
+    <th><%= t 'categories.name' %></th>
+    <th style="width: 100px;"><%= t 'actions.actions' %></th>
   </tr>
 
   <% @categories.each do |category| %>
       <tr>
         <td><%= category.name %></td>
         <td>
-          <%= link_to 'Delete', admin_category_path(category), method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= link_to (t 'actions.delete'), admin_category_path(category), method: :delete, data: {confirm: 'Are you sure?'} %>
         </td>
       </tr>
   <% end %>

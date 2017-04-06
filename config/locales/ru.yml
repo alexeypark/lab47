@@ -42,11 +42,25 @@ ru:
     learn_more: 'Узнать больше'
   categories:
     categories: 'Категории'
+    category: 'Категория'
+    new_category: 'Добавить категорию'
+    name: 'Наименование'
   prices:
     price: 'Цена'
   products:
     products: 'Продукты'
-
+    new_product: 'Добавить продукт'
+    image: 'Изображение'
+    title: 'Наименование'
+    title_en: 'Наименование на английском'
+    title_ru: 'Наименование на русском'
+    description: 'Описание'
+    edit_product: 'Редактирование продукта'
+  actions:
+      actions: 'Действия'
+      view: 'Просмотреть'
+      edit: 'Редактировать'
+      delete: 'Удалить'
   will_paginate:
       previous_label: "&#8592; Назад"
       next_label: "Вперед &#8594;"
