@@ -24,7 +24,7 @@
     <div class="col-sm-10">
       <%= f.password_field :password, autocomplete: 'off', class: 'form-control' %>
       <%= render 'shared/field_errors', object: resource, field_name: :password %>
-      <i class="help-block">(leave blank if you don't want to change it)</i>
+      <i class="help-block"><%= t 'devise.registrations.edit.leave_blank_if_you_don_t_want_to_change_it' %></i>
       <% if @minimum_password_length %>
         <span class="help-block">(<%= @minimum_password_length %> characters minimum)</span>
       <% end %>
@@ -44,7 +44,7 @@
     <div class="col-sm-10">
       <%= f.password_field :current_password, autocomplete: 'off', class: 'form-control' %>
       <%= render 'shared/field_errors', object: resource, field_name: :current_password %>
-      <i class="help-block">(we need your current password to confirm your changes)</i>
+      <i class="help-block"><%= t 'devise.registrations.edit.we_need_your_current_password_to_confirm_your_changes' %></i>
     </div>
   </div>
 

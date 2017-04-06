@@ -56,6 +56,7 @@ ru:
     title_ru: 'Наименование на русском'
     description: 'Описание'
     edit_product: 'Редактирование продукта'
+    back_to_list: 'Вернуться к списку продуктов'
   actions:
       actions: 'Действия'
       view: 'Просмотреть'
@@ -66,11 +67,16 @@ ru:
       new_user: 'Регистрация пользователя'
       edit_user: 'Редактировать пользователя'
       sign_up: 'Зарегистрироваться'
-
+  avatar:
+    change: 'Изменить свою Аватарку'
+    update: 'Поменять Аватар'
+  password:
+      validation: '- минимальное количество символов'
   will_paginate:
       previous_label: "&#8592; Назад"
       next_label: "Вперед &#8594;"
       page_gap: "&hellip;"
+
   activerecord:
     errors:
       messages:
@@ -125,6 +131,20 @@ ru:
           many: "%{model}: сохранение не удалось из-за %{count} ошибок"
           one: "%{model}: сохранение не удалось из-за %{count} ошибки"
           other: "%{model}: сохранение не удалось из-за %{count} ошибки"
+    models:
+      product: 'Продукт'
+      category: 'Категория'
+    attributes:
+      product:
+        title_en: 'Наименование на английском'
+        title_ru: 'Наименование на русском'
+        description: 'Описание'
+        image: 'Изображение'
+        price: 'Поле цена'
+      category:
+        name: 'Наименование'
+      user:
+        name: 'Имя'
     helpers:
       select:
         prompt: 'Выберите: '

@@ -56,6 +56,7 @@ en:
     title_ru: 'Title in russian'
     description: 'Description'
     edit_product: 'Edit Product'
+    back_to_list: 'Back to list'
   actions:
     actions: 'Actions'
     view: 'View'
@@ -66,9 +67,12 @@ en:
     new_user: 'New User'
     edit_user: 'Edit User'
     sign_up: 'Sign Up'
-
-
+  avatar:
+    change: 'Change your Avatar'
+    update: 'Update Avatar'
   will_paginate:
       previous_label: "&#8592; Previous"
       next_label: "Next &#8594;"
       page_gap: "&hellip;"
+  password:
+    validation: 'characters minimum'
