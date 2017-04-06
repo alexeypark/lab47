@@ -25,6 +25,13 @@ ru:
     sign_up: 'Регистрация'
     log_in: 'Войти'
     admin_title: 'Магазин Админ'
+    logged_in_as: 'Вход выполнен пользователем'
+    panel: 'Панель админа'
+    avatar: 'Управление аватаром'
+    edit_profile: 'Редактирование профиля'
+    view_orders: 'Список заказов'
+    sign_out: 'Выйти'
+    account: 'Аккаунт'
   index:
     greeting: 'Добро пожаловать в Магазин!'
     description: 'Здесь вы сможете приобрести все виды компьютерного оборудования по самым низким ценам. Мы сотрудничаем только с проверенными и крупными поставщиками, чтобы удовлетворить ваши потребности.'
@@ -37,7 +44,13 @@ ru:
     categories: 'Категории'
   prices:
     price: 'Цена'
-  products: 'Продукты'
+  products:
+    products: 'Продукты'
+
+  will_paginate:
+      previous_label: "&#8592; Назад"
+      next_label: "Вперед &#8594;"
+      page_gap: "&hellip;"
   activerecord:
     errors:
       messages:

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     root 'products#index'
     resources :products, only: [:show, :index]
     resources :categories, only: [:show]
+    get ':id/edit', to: 'avatars#edit', as: :edit_avatar
+    patch ':id/update', to: 'avatars#update', as: :update_avatar
     namespace :admin do
       root 'products#index'
       resources :products
