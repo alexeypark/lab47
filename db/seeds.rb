@@ -22,5 +22,5 @@ mb = Product.create(title_en: 'Asus P5Q3', title_ru: 'Эйсус П5КЬЮ3' ,pr
                  image: File.open(Dir.glob(File.join(Rails.root,'app', 'assets', 'images', 'fixtures', '*')).sample))
 end
 
-user = User.create(name: 'John Doe', email: 'johndoe@example.com', password: '12345678', password_confirmation: '12345678')
-admin_user = User.create(name: 'Admin', email: 'admin@example.com', password: 'adminadmin', password_confirmation: 'adminadmin', admin: true)
+user = User.create(name: 'John Doe', email: 'johndoe@example.com', password: '12345678', password_confirmation: '12345678', avatar: File.open(File.join(Rails.root,'app', 'assets', 'images', 'avatar', 'avatar.jpg')) )
+admin_user = User.create(name: 'Admin', email: 'admin@example.com', password: 'adminadmin', password_confirmation: 'adminadmin', admin: true, avatar: File.open(File.join(Rails.root,'app', 'assets', 'images', 'avatar', 'avatar.jpg')) )

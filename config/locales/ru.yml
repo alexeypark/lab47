@@ -65,6 +65,18 @@ ru:
       previous_label: "&#8592; Назад"
       next_label: "Вперед &#8594;"
       page_gap: "&hellip;"
+
+  activemodel:
+      models:
+        product: "Продукт"
+      attributes:
+        pledge:
+          image: 'Изображение'
+          title_en: 'Наименование на английском'
+          title_ru: 'Наименование на русском'
+          description: 'Описание'
+          price: 'Цена'
+
   activerecord:
     errors:
       messages:
